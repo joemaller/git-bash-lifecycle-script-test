@@ -4,11 +4,11 @@
 
 Isolate why some long-running scripts in [Git-Bash][] trigger post{script} lifecycle scripts after being killed with `control-c` while others do not.
 
+This is a problem when running the [ideasonpurpose/docker-build](https://github.com/ideasonpurpose/docker-build) `start` script since it leaves behind an orphaned Docker instance which much be killed manually. 
+
 ## Setup
 
 The usual: `npm install`
-
-The primary issue
 
 ## Tests
 
