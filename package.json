@@ -1,0 +1,21 @@
+{
+  "name": "npm-lifecycle-script-test",
+  "description": "Test lifecycle scripts in Git Bash on Windows",
+  "license": "ISC",
+  "author": "Joe Maller <joe@ideasonpurpose.com>",
+  "scripts": {
+    "echo": "echo echo script",
+    "postecho": "echo postecho script",
+    "pyserver": "cross-env-shell \"python -m http.server 8000\"",
+    "postpyserver": "echo postpyserver",
+    "server": "http-server -p 8080",
+    "postserver": "echo postserver",
+    "watch": "chokidar \"**/*.js\"",
+    "postwatch": "echo postwatch"
+  },
+  "dependencies": {
+    "chokidar-cli": "^2.1.0",
+    "cross-env": "^7.0.2",
+    "http-server": "^0.12.3"
+  }
+}
